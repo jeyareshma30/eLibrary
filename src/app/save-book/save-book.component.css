@@ -1,0 +1,22 @@
+input
+{ 
+    width:180px;
+    float: right;
+    margin-right: 600px;
+}
+label{
+    margin-left: 380px;
+}
+button
+{   
+    margin-left: 730px;
+    width: 80px;
+    padding: 5px;
+    background-color: orange;
+    border-radius: 15px;
+    color: white;
+}
+h1{
+    margin-left: 380px;
+    color:blue;
+}

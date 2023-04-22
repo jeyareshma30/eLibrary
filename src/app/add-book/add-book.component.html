@@ -1,0 +1,64 @@
+<h1>Book List</h1>
+<div class="block">
+<ul>
+    <mat-icon>home</mat-icon>
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/about">About Library</a></li>
+    <li><a routerLink="/rules">Rules & Regulations</a></li>
+    <li><a routerLink="price">Price Card</a></li>
+    <li><a routerLink="search">Search</a></li>
+    <li *ngIf="usrRol=='admin'" ><a routerLink="addBook">Add Book</a></li>
+</ul>
+<table border="1">
+        <tr>
+        <th>Book Id</th>
+        <th>Book Name</th>
+        <th>Book Description</th>
+        <th>Author</th>
+        <th>Number of books available</th>
+        </tr>
+        <tr *ngFor="let b of bookList;let i=index;">
+            <td>{{b.bookId}}</td>
+            <td>{{b.bookTitle}}</td>
+            <td>{{b.bookDescription}}</td>
+            <td>{{b.authorName}}</td>
+            <td>{{b.numberOfBooksAvailable}}</td>    
+</table>
+</div>
+<h2>Add Book</h2>
+<form #addbook="ngForm" (ngSubmit)="onSubmit(addbook)">
+    <p>
+        <label>Book Id</label>
+        
+            <input type="text" name="id" [(ngModel)]="bookId" required pattern="^[0-9]*+$" ngModel>
+        </p>
+    <p>
+        <label>Book Title</label>
+        
+            <input type="text" name="title" [(ngModel)]="bookTitle" required pattern="^[a-zA-Z0-9]*+$" maxlength="50" ngModel>
+    </p>
+    <p>
+        <label>Book Description</label>
+        
+            <input type="text" name="description" [(ngModel)]="bookDescription" pattern="^[a-zA-Z0-9]*+$" maxlength="150" ngModel>
+    </p>
+    <p>
+        <label>Author</label>
+        
+            <input type="text" name="author" [(ngModel)]="authorName" required pattern="^[a-zA-Z0-9]*+$" maxlength="50" ngModel>
+    </p>
+    <p>
+        <label>Number of Books Available</label>
+        
+            <input type="text" name="numberofbooks" [(ngModel)]="numberOfBooksAvailable" required pattern="^[0-9]*+$" ngModel>
+    </p>
+    <p>
+            <button *ngIf="usrRol=='admin'" [disabled]="!addbook.valid" (click)="addBook()">Add Book</button>
+    </p>
+    
+</form>
+
+
+
+
+

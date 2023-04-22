@@ -1,0 +1,70 @@
+ul{
+    display: flex;
+    margin-left: 420px;
+    background-color: gray;
+    margin-bottom: 1px;
+    border:1px solid;
+    margin-inline-start: 500px;
+    margin-inline-end: 400px;
+
+}
+ul li{
+    text-decoration: none;
+    margin-left: 20px;
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+ul li a:hover
+{
+    background-color: orange;
+}
+.login form{
+    text-align: center;
+    background-color: white;
+    border: 1px solid;
+    margin-inline-start: 500px;
+    margin-inline-end: 400px;
+    background-image: url(/assets/librarybg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    
+}
+ h1{
+    margin-left: 750px;
+    color: blue;
+}
+
+h2{
+    color: orange;
+    margin-top: 30px;
+}
+.login input{
+
+width:200px;
+height: 25px;
+border-radius: 5px;
+}
+mat-icon
+{
+    background-color: white; 
+position: relative;
+border:1px solid black;
+ border-radius:5px;   
+
+}
+.login label{
+    color: orange;
+    font-weight: bold;
+
+}
+.login button{
+    margin-left: 70px;
+    background-color: orange;
+    color:white;
+    width: 80px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}

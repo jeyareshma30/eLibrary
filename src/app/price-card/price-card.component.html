@@ -1,0 +1,15 @@
+<h1>Price Card</h1>
+<table border="1">
+    <tr>
+        <th>Member's Category</th>
+        <th>Number of Books</th>
+        <th>Issuing Period</th>
+        <th>Fine per day</th>
+    </tr>
+    <tr *ngFor="let prce of priceCard">
+        <td>{{prce.membersCategory}}</td>
+        <td>{{prce.numberOfBooks}}</td>
+        <td>{{prce.issuingPeriod}}</td>
+        <td>{{prce.finePerDay}}</td>
+    </tr>
+</table>

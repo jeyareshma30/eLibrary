@@ -1,0 +1,62 @@
+ul{
+    display: flex;
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: gray;
+    margin-bottom: -1px;
+    margin-top: 1px;
+    
+
+}
+ul li{
+    text-decoration: none;
+    margin-left: 120px;
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+ul li a:hover
+{
+    background-color: orange;
+}
+mat-icon
+{
+    color:red;
+}
+h1
+{
+    margin-left: 8px;
+    color: blue;
+}
+form{
+    margin-left: 20px;
+    margin-inline-end: 400px;
+}
+input
+{ 
+    width:180px;
+    float: right;
+    margin-right: 600px;
+}
+button{
+    margin-left: 290px;
+    background-color: orange;
+    color:white;
+    border-radius: 50px;
+}
+h2{
+    margin-left: 18px;
+    margin-top: 20px;
+    color:blue;
+}
+table{
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: -1px;
+}
+.block
+{
+    border: 1px solid;
+}
