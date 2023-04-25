@@ -22,7 +22,6 @@ constructor(private eLibServ:ELibraryService){}
   ngOnInit(): void {
     this.booklst=this.eLibServ.bookList;
     this.bookList=this.booklst;
-    localStorage.setItem('userRole','admin');
     this.usrRol=localStorage.getItem('userRole');
 }
 addBook()

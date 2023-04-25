@@ -7,13 +7,11 @@ import { LoginComponent } from './login/login.component';
 import { PriceCardComponent } from './price-card/price-card.component';
 import { RegisterComponent } from './register/register.component';
 import { SearchComponent } from './search/search.component';
-import { SaveBookComponent } from './save-book/save-book.component';
 import { DeleteComponent } from './delete/delete.component';
-import { HomeComponent } from './home/home.component';
 import { RulesComponent } from './rules/rules.component';
-import { SearchAdminComponent } from './search-admin/search-admin.component';
 import { EditComponent } from './edit/edit.component';
-
+import { HomeComponent } from './home/home.component';
+import { AuthRouteGuardGuard } from './auth-route-guard.guard';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
@@ -22,13 +20,12 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'search',component:SearchComponent},
   {path:'price',component:PriceCardComponent},
-  {path:'addBook',component:AddBookComponent},
-  {path:'edit',component:EditComponent},
+  {path:'addBook',component:AddBookComponent,canActivate:[AuthRouteGuardGuard]},
+  {path:'edit',component:EditComponent,canActivate:[AuthRouteGuardGuard]},
   {path:'edit/:id',component:EditBookComponent},
-  {path:'save',component:SaveBookComponent},
-  {path:'delete',component:DeleteComponent},
+  {path:'delete',component:DeleteComponent,canActivate:[AuthRouteGuardGuard]},
   {path:'rules',component:RulesComponent},
-  {path:'searchAdmin',component:SearchAdminComponent},
+  {path:'',redirectTo:'HomeComponent',pathMatch:'full'}
 ];
 
 @NgModule({

@@ -1,20 +1,6 @@
-<div class="register">
-    <h1>Registration</h1>
-    </div>
-    <ul>
-        <mat-icon>home</mat-icon>
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/about">About Library</a></li>
-        <li><a routerLink="/rules">Rules & Regulations</a></li>
-        <li><a routerLink="/price">Price Card</a></li>
-        <li><a routerLink="/login">Login</a></li>
-        
-    </ul>
-    <div class="block">
-        <div class="main">
-            <div class="signup">
+<div class="block">
     <form #register="ngForm" (ngSubmit)="onSubmit(register)">
-        <h2>Sign Up</h2>
+        <h1>Registration Page</h1>
         <div>
             <label for="FirstName">First Name</label>
             <p><input type="text" name="firstName"  placeholder="First name" [(ngModel)]="signupObj.firstName" required pattern="^[a-zA-Z]*+$" #firstName="ngModel" ngModel></p>
@@ -41,5 +27,6 @@
             <button [disabled]="!register.valid" (click)="onSignUp()">Sign Up</button>
         </div>
     </form>
-    </div>
+</div>
+    
     

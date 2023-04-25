@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class ELibraryService {
+  [x: string]: any;
 
   constructor(private router:Router) { }
   

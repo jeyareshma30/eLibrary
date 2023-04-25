@@ -2,10 +2,12 @@
 .about
 {
     border: 1px solid;
-    margin-inline-start: 50px;
-    margin-inline-end: 50px;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    background-color: azure;
+
 }
 h1{
-    margin-left: 50px;
+    margin-left: 300px;
     color: blue;
 }

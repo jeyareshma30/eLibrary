@@ -10,14 +10,13 @@ import { book } from '../Model/iELibrary';
 export class SearchComponent implements OnInit {
   public booklst: any;
   public bookList:any[]=[];
-  usrRol!: any;
-  usrStatus!:any;
+  usrRol:string | null | undefined;
 constructor(private eLibSer:ELibraryService){}
   ngOnInit(): void {
     this.booklst=this.eLibSer.bookList;
     this.bookList=this.booklst;
-    localStorage.setItem('userRole','user');
-    this.usrRol=localStorage.getItem('userRole');
+    localStorage.setItem('userType','user')
+    this.usrRol=localStorage.getItem('userType');
     
   }
  public searchBook: any;

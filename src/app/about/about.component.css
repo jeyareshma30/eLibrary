@@ -1,5 +1,5 @@
 h1{
-    margin-left: 55px;
+    margin-left: 320px;
     color: blue;
 }
 .bg
@@ -26,18 +26,7 @@ h1{
     border:1px solid;
     margin-inline-start: 50px;
     margin-inline-end: 50px;
-    
-
-}
-ul li{
-    text-decoration: none;
-    margin-left: 150px;
-    list-style-type: none;
-}
-ul li a{
-    text-decoration: none;
-    color:white;
-}
+    }
 
 
 p{
@@ -53,10 +42,14 @@ h3{
 .about
 {
     border: 1px solid;
-    margin-inline-start: 50px;
-    margin-inline-end: 50px;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
 }
 mat-icon
 {
     color: red;
+}
+.block
+{
+    background-color: aquamarine;
 }

@@ -15,16 +15,14 @@ import { AddBookComponent } from './add-book/add-book.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import { ELibraryService } from './e-library.service';
 import { DeleteComponent } from './delete/delete.component';
-import { HomeComponent } from './home/home.component';
 import { RulesComponent } from './rules/rules.component';
 import { FormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
-import { ToastrModule } from 'ngx-toastr';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component'
 import { MatDialogModule } from '@angular/material/dialog';
-import { SaveBookComponent } from './save-book/save-book.component';
-import { SearchAdminComponent } from './search-admin/search-admin.component';
 import { EditComponent } from './edit/edit.component';
+import { HomeComponent } from './home/home.component';
+import { AuthRouteGuardGuard } from './auth-route-guard.guard';
 
 
 @NgModule({
@@ -38,13 +36,11 @@ import { EditComponent } from './edit/edit.component';
     AddBookComponent,
     EditBookComponent,
     DeleteComponent,
-    HomeComponent,
     RulesComponent,
     SearchPipe,
     ConfirmationDialogComponent,
-    SaveBookComponent,
-    SearchAdminComponent,
     EditComponent,
+    HomeComponent,
     
   ],
   imports: [
@@ -54,11 +50,10 @@ import { EditComponent } from './edit/edit.component';
     MatIconModule,
     BrowserAnimationsModule,
     FormsModule,
-    ToastrModule.forRoot(),
     MatDialogModule
     
   ],
-   providers: [ELibraryService],
+   providers: [ELibraryService,AuthRouteGuardGuard],
   bootstrap: [AppComponent],
   entryComponents:[ConfirmationDialogComponent],
 })

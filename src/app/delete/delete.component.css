@@ -1,20 +1,4 @@
-ul{
-    display: flex;
-    background-color: gray;
-    margin-bottom: 1px;
-    border:1px solid;
-    
 
-}
-ul li{
-    text-decoration: none;
-    margin-left: 150px;
-    list-style-type: none;
-}
-ul li a{
-    text-decoration: none;
-    color:white;
-}
 .srch
 {   
     margin-left: 120px;
@@ -31,6 +15,9 @@ table
 }
 div{
     border: 1px solid;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    background-color: antiquewhite;
 }
 h3{
     margin-left: 20px;
@@ -44,4 +31,5 @@ mat-icon
 }
 h1{
     color: blue;
+    margin-left: 20px;
 }

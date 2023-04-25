@@ -1,31 +1,9 @@
-ul{
-    display: flex;
-    margin-left: 400px;
-    background-color: gray;
-    margin-bottom: 1px;
-    border:1px solid;
-    margin-inline-start: 420px;
-    margin-inline-end: 400px;
-
-}
-ul li{
-    text-decoration: none;
-    margin-left: 30px;
-    list-style-type: none;
-}
-ul li a{
-    text-decoration: none;
-    color:white;
-}
-ul li a:hover
-{
-    background-color: orange;
-}
 form{
     margin-left: 600px;
     border: 1px solid;
-    margin-inline-start: 420px;
-    margin-inline-end: 400px;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    background-color:blueviolet;
 
 }
 button{
@@ -37,13 +15,9 @@ button{
     margin-bottom: 20px;
 
 }
-h2{
-    margin-left: 40px;
-    margin-top: 20px;
-}
 h1{
-    margin-left: 650px;
-    color: blue;
+    margin-left: 5px;
+    color: red;
 }
 .block
 {

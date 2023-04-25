@@ -1,51 +1,36 @@
-ul{
-    display: flex;
-    margin-left: 400px;
-    background-color: gray;
-    margin-bottom: 1px;
-    border:1px solid;
-    margin-inline-start: 420px;
-    margin-inline-end: 480px;
-
-}
-ul li{
-    text-decoration: none;
-    margin-left: 25px;
-    list-style-type: none;
-}
-ul li a{
-    text-decoration: none;
-    color:white;
-}
-ul li a:hover
-{
-    background-color: orange;
-}
 mat-icon
 {
     color:red;
 }
 h1
 {
-    margin-left: 480px;
+    margin-left: 250px;
     color: blue;
 }
 
 label{
-    margin-left: 480px;
+    margin-left: 250px;
     margin-bottom: 1px;
 }
 input
 { 
     width:180px;
     float: right;
-    margin-right: 550px;
+    margin-right: 200px;
     margin-bottom: 2px;
 }
 button{
-    margin-left: 780px;
+    margin-left: 550px;
     background-color: orange;
     color:white;
     border-radius: 50px;
+}
+.block
+{
+    border:1px solid;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    background-image: url("/assets/background.jpg");
+
 }
 

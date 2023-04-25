@@ -1,18 +1,4 @@
-ul{
-    display: flex;
-    background-color: gray;
-    margin-bottom: 1px;
-    border:1px solid;
-}
-ul li{
-    text-decoration: none;
-    margin-left: 150px;
-    list-style-type: none;
-}
-ul li a{
-    text-decoration: none;
-    color:white;
-}
+
 button
 {   
     margin-left: 120px;
@@ -29,6 +15,9 @@ table
 }
 div{
     border: 1px solid;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    background-color: bisque;
 }
 h3{
     margin-left: 20px;
@@ -41,8 +30,6 @@ mat-icon
     color: red;
 }
 h1{
-    color: blue;
-}
-a{
+    margin-left: 30px;
     color: blue;
 }

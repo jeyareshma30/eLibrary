@@ -1,7 +1,17 @@
 h1{
-    margin-left: 750px;
+    margin-left: 370px;
     color: blue;
 }
-table{
-    margin-left: 550px;
+table
+{
+margin-left: 200px;
+margin-bottom: 25px;
+}
+div{
+border: 1px solid;
+margin-inline-start: 300px;
+margin-inline-end: 300px;
+background-image: url("/assets/bg.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
 }

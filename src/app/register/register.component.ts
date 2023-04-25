@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router'; 
-import { ELibraryService } from '../e-library.service';
 
 @Component({
   selector: 'app-register',

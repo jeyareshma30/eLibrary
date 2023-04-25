@@ -1,13 +1,16 @@
 <h1>E-Library System</h1>
- <ul>
-    <li><a routerLink="/home">Home</a></li>
-    <li><a routerLink="/signup">Register</a></li>
-    <li><a routerLink="/login">Login</a></li>
-    <li><a routerLink="/addBook">AddBook</a></li>
-    <li><a routerLink="/search">Search</a></li>
-    <li><a routerLink="/searchAdmin">SearchAdmin</a></li>
-    <li><a routerLink="/edit">Edit</a></li>
-    <li><a routerLink="/delete">Delete</a></li>
- </ul>
-    <router-outlet></router-outlet>
- 
+<ul>
+   <mat-icon>home</mat-icon>
+   <li><a routerLink="/home">Home</a></li>
+   <li><a routerLink="/signup">Register</a></li>
+   <li *ngIf="loggedIn()"><a routerLink="/search">Search</a></li>
+   <li><a routerLink="/about">About Library</a></li>
+   <li><a routerLink="/rules">Rules & Regulations</a></li>
+   <li><a routerLink="/price">Price Card</a></li>
+   <li *ngIf="usrRol=='admin'"><a routerLink="/addBook"> Add Book</a></li>
+   <li *ngIf="usrRol=='admin'"><a routerLink="/edit">Edit</a></li>
+   <li *ngIf="usrRol=='admin'"><a routerLink="/delete">Delete</a></li>
+   <li *ngIf="!loggedIn()"><a routerLink="/login">Login</a></li>
+   <li *ngIf="loggedIn()"><a routerLink="/login" (click)="onLogout()">Logout</a></li>
+   </ul>
+<router-outlet></router-outlet>

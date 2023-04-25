@@ -17,7 +17,6 @@ constructor(private routes:ActivatedRoute,private eLibServ:ELibraryService,priva
   ngOnInit(): void {
     this.booklst=this.eLibServ.bookList;
     this.bookList=this.booklst;
-    localStorage.setItem('userRole','admin');
     this.usrRol=localStorage.getItem('userRole');
     this.booklist=[];
     }

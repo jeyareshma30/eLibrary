@@ -18,11 +18,10 @@ export class EditComponent implements OnInit {
   public bookList:book[]=[];
   books:book | undefined;
   usrRol: any;
-constructor(private route:Router,private routes:ActivatedRoute,private eLibServ:ELibraryService){}
+  constructor(private route:Router,private routes:ActivatedRoute,private eLibServ:ELibraryService){}
   ngOnInit(): void {
     this.booklst=this.eLibServ.bookList;
     this.bookList=this.booklst;
-    localStorage.setItem('userRole','admin');
     this.usrRol=localStorage.getItem('userRole');
     };
   searchBook:any;

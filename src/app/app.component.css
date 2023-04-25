@@ -1,0 +1,31 @@
+ul{
+    display: flex;
+    background-color: gray;
+    margin-bottom: 1px;
+    border:1px solid;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    margin-top: 140px;
+
+}
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 15px;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+ul li a:hover
+{
+    background-color: orange;
+}
+h1{
+    text-align: center;
+    color: blue;
+    }
+mat-icon
+{
+    color: red;
+}

@@ -1,14 +1,6 @@
-<h1>Book List</h1>
+
 <div class="block">
-<ul>
-    <mat-icon>home</mat-icon>
-    <li><a routerLink="/home">Home</a></li>
-    <li><a routerLink="/about">About Library</a></li>
-    <li><a routerLink="/rules">Rules & Regulations</a></li>
-    <li><a routerLink="price">Price Card</a></li>
-    <li><a routerLink="search">Search</a></li>
-    <li *ngIf="usrRol=='admin'" ><a routerLink="addBook">Add Book</a></li>
-</ul>
+    <h1>Book List</h1>
 <table border="1">
         <tr>
         <th>Book Id</th>
@@ -24,7 +16,6 @@
             <td>{{b.authorName}}</td>
             <td>{{b.numberOfBooksAvailable}}</td>    
 </table>
-</div>
 <h2>Add Book</h2>
 <form #addbook="ngForm" (ngSubmit)="onSubmit(addbook)">
     <p>
@@ -57,6 +48,7 @@
     </p>
     
 </form>
+</div>
 
 
 

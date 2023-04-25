@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'eLibrarySystem';
-  ngOnInit(){
-    
+  
+  usrRol:string | null | undefined;
+  ngOnInit():void{
+    localStorage.setItem('userRole','admin')
+    this.usrRol=localStorage.getItem('userRole')
   }
+    
+   loggedIn() {
+    return localStorage.getItem('token');
+   }
+   onLogout()
+   {
+    localStorage.removeItem('token');
+   }
+  
 }

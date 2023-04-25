@@ -1,27 +1,13 @@
-<h1>Login Page</h1>
-<ul>
-    <mat-icon>home</mat-icon>
-    <li><a routerLink="/home">Home</a></li>
-    <li><a routerLink="/about">About Library</a></li>
-    <li><a routerLink="/rules">Rules & Regulations</a></li>
-    <li><a routerLink="/price">Price Card</a></li>
-    <li><a routerLink="/signup">Register</a></li>
-    
-</ul>
 
-<div class="lg">
-
-</div>
-<div class="login">
 <form #login="ngForm" (ngSubmit)="onLogin(login)">
-    <h2>LIBRARY <br/> MANAGEMENT SYSTEM</h2>
+    <h1>Login Page</h1>
      <div>
         <label for="Email">User Name:</label>
-        <mat-icon>person</mat-icon><input type="text" name="email" placeholder="Enter User Name" [(ngModel)]="loginObj.email" required email #email="ngModel" ngModel >
+     <p><input type="text" name="email" placeholder="Enter User Name" [(ngModel)]="loginObj.email" required email #email="ngModel" ngModel ></p>
         </div>
         <div>
             <label for="password">Password:</label>
-           <mat-icon>vpn_key</mat-icon><input type="password" name="pswd" placeholder="Enter password" [(ngModel)]="loginObj.password" required #password="ngModel" ngModel>
+           <p><input type="password" name="pswd" placeholder="Enter password" [(ngModel)]="loginObj.password" required #password="ngModel" ngModel></p>
         
         </div>
         <div>
@@ -29,7 +15,7 @@
         </div>
     
 </form>
-</div>
+
 
     
 
