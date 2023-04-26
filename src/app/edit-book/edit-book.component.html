@@ -1,28 +1,29 @@
 <div class="block">
-    <h1>Edit Book</h1>
    <form *ngIf="books">
+    <h1>Edit Book</h1>
       <p>
       <label>Book Id</label>
-      <input type="text" value="{{books.bookId}}">
+      <input type="text" value="{{books.bookId}}" [disabled]="!books.isEditable"/>
       </p>
       <p>
       <label>Book Title</label>
-      <input type="text" value="{{books.bookTitle}}">
+      <input type="text" value="{{books.bookTitle}}" [disabled]="!books.isEditable"/>
       </p>
       <p>
       <label>Book Description</label>
-      <input type="text" value="{{books.bookDescription}}">
+      <input type="text" value="{{books.bookDescription}}" [disabled]="!books.isEditable"/>
       </p>
       <p>
       <label>Author Name</label>
-      <input type="text" value="{{books.authorName}}">
+      <input type="text" value="{{books.authorName}}" [disabled]="!books.isEditable"/>
       </p>
    <p>
       <label>Number Of Books Available</label>
-      <input type="text" value="{{books.numberOfBooksAvailable}}">
+      <input type="text" value="{{books.numberOfBooksAvailable}}" [disabled]="!books.isEditable"/>
    </p>
    <p>
-      <button type="submit" (click)="onSave()">Update</button>
+      <button (click)="books.isEditable=!books.isEditable" *ngIf="!books.isEditable">Edit</button>
+      <button *ngIf="books.isEditable" (click)="books.isEditable=!books.isEditable">Save</button>
    </p>
    </form>
 </div>

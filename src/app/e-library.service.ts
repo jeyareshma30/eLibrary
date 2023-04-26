@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class ELibraryService {
-  [x: string]: any;
 
   constructor(private router:Router) { }
   
@@ -69,6 +68,14 @@ export class ELibraryService {
       numberOfBooksAvailable:90
     },
   ]
+  onGet()
+  {
+    return this.bookList;
+  }
+  onEdit(bookList:book){
+    this.bookList.push(bookList);
+  }
+
 }
 
 

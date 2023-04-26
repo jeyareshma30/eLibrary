@@ -1,42 +1,60 @@
 form{
-    text-align: center;
-    background-color: white;
-    border: 1px solid;
-    margin-inline-start: 300px;
-    margin-inline-end: 300px;
-    background-image: url(/assets/librarybg.jpg);
-    background-repeat: no-repeat;
-    background-size: 1200px;
-    
+ margin-left: 620px;
+ border: 1px solid;
+ margin-inline-start: 300px;
+ margin-inline-end: 300px;
+ background-image: url("/assets/library.jpg");
+ background-repeat: no-repeat;
+ background-size: 100%;
 }
- h1{
-    margin-left: 10px;
-    color: blue;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- input{
-
-width:200px;
-height: 25px;
-border-radius: 5px;
-}
-mat-icon
+.mm
 {
-    background-color: white; 
-position: relative;
-border:1px solid black;
- border-radius:5px;   
-color:red;
+    position: relative;
+    width:220px;
+    height: 10px;
+    margin-left: 330px;
+    margin-top: 30px;
 }
+input{
+    float: right;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    width:90%;
+}
+mat-icon{
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    width:10%;
+    padding-bottom: 28px;
+    border: 1px solid;
+}
+
  label{
-    color:red;
+    color:pink;
     font-weight: bold;
+    margin-left: 70px;
 
 }
  button{
-    margin-left: 5px;
+    margin-left: 400px;
     background-color: orange;
     color:white;
     width: 80px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 80px;
     border-radius: 5px;
+}
+h1{
+    margin-left: 370px;
+    color: red;
 }
