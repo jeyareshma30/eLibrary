@@ -68,13 +68,6 @@ export class ELibraryService {
       numberOfBooksAvailable:90
     },
   ]
-  onGet()
-  {
-    return this.bookList;
-  }
-  onEdit(bookList:book){
-    this.bookList.push(bookList);
-  }
 
 }
 

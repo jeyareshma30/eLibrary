@@ -11,6 +11,6 @@
    <li *ngIf="usrRol=='admin'"><a routerLink="/delete">Delete</a></li>
    <li *ngIf="loggedIn()"><a routerLink="/search">Search</a></li>
    <li *ngIf="!loggedIn()"><a routerLink="/login"><img src="../assets/login.jpg" width="30px"></a></li>
-   <li *ngIf="loggedIn()"><a routerLink="/login" (click)="onLogout()"><img src="../assets/signout.jpg" width="30px"></a></li>
+   <li *ngIf="loggedIn()"><a routerLink="/login" (click)="onLogout()"><img src="../assets/logout.jpg" width="30px"></a></li>
    </ul>
 <router-outlet></router-outlet>

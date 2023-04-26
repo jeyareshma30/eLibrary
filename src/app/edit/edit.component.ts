@@ -20,7 +20,7 @@ export class EditComponent implements OnInit {
   usrRol: any;
   constructor(private route:Router,private routes:ActivatedRoute,private eLibServ:ELibraryService){}
   ngOnInit(): void {
-    this.booklst=this.eLibServ.onGet();
+    this.booklst=this.eLibServ.bookList;
     this.bookList=this.booklst;
     this.usrRol=localStorage.getItem('userRole');
     };

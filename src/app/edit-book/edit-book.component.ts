@@ -19,7 +19,7 @@ booklst:any;
     this.bookList=this.booklst;
    const routeParams=this.routes.snapshot.paramMap;
     const bookIdFromRoute=Number(routeParams.get('id'));
-  this.books=this.bookList.find(books=>books.bookId==bookIdFromRoute)
+  this.books=this.bookList.find(books=>books.bookId==bookIdFromRoute);
   const localData=localStorage.getItem('bookList');
 }
 }
