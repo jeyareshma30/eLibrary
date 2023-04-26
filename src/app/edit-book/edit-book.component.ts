@@ -20,7 +20,6 @@ booklst:any;
    const routeParams=this.routes.snapshot.paramMap;
     const bookIdFromRoute=Number(routeParams.get('id'));
   this.books=this.bookList.find(books=>books.bookId==bookIdFromRoute);
-  const localData=localStorage.getItem('bookList');
 }
 }
 
